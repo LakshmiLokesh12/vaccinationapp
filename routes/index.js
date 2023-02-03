@@ -5,7 +5,7 @@ const vaccineController = require("../controllers/vaccine.controller");
 const Router = express.Router();
 
 Router.post("/signup", userController.CreateUser);
-Router.age = "20";
+//Router.age = "20";
 Router.post("/vaccination", vaccineController.CreateVaccinationCertificate);
 
 // Vaccination

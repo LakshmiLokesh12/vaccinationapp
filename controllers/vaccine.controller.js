@@ -1,3 +1,5 @@
+
+//
 const vaccineModel = require("../models/vaccine.model");
 exports.CreateVaccinationCertificate = (req, res) => {
   const data = req.body;
@@ -49,3 +51,4 @@ exports.getVaccineDetailsByCity = (req, res) => {
     return res.status(200).send({ result });
   });
 };
+///
