@@ -11,7 +11,9 @@ exports.CreateUser = (data, callback) => {
         state,
         pincode,
         bloodgroup,
-        mobile_number) values (?,?,?,?,?,?,?,?,?)`;
+        mobile_number,
+        password,
+        confirm_password) values (?,?,?,?,?,?,?,?,?,?,?)`;
   sqlConnection.executeQuery(sql, values, function (err, result) {
     callback(err, result);
   });
